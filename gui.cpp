@@ -2,11 +2,16 @@
 
 #include <QPainter>
 #include <QTimer>
+#include <QPixmap>
+#include <thread>
 
 GUI::GUI(QWidget *parent)
     : QWidget(parent)
     , t(new QTimer(this))
 {
+    QPalette ppp(this->palette());
+    ppp.setColor(QPalette::Background, Qt::white);
+    this->setPalette(ppp);
     //Заранее настроим анимацию на 25 кадров в секунду
     t->setInterval(40);
     //и определим поведение по таймеру

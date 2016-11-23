@@ -10,11 +10,14 @@ class Datum;
 class Application : public QApplication
 {
     GUI* const g;
+
 public:
     Application(int argc, char** argv);
     ~Application();
 
-    static void showDatum(const Datum&);
+    void showBarley();
+
+    static void showDatum(const Datum&, bool withTimeout = true);
 };
 
 #endif // APPLICATION_H

@@ -218,7 +218,7 @@ Datum Datum::realize(const Datum::Step& s) const
 //Оценка перспективности состояния оценивается как длинна пути, приведшего к данному решению и количеству звёзд на центральной линии
 int Datum::valuation() const
 {
-    return way.size() + result();
+    return static_cast<int>(way.size()) + result();
 }
 
 //непосредственно решение существует в двух реализациях. Изначально была реализована упрощенная и наиболее эфективная версия, в данной версии
@@ -270,5 +270,5 @@ Datum::Solve Datum::solve()
         first.begin()->second.way.pop();
     }
     //Теперь решение готово.
-    return s;
+    return std::move(s);
 }

@@ -3,4 +3,10 @@
         <file>star.png</file>
         <file>1028079.jpeg</file>
     </qresource>
+    <qresource prefix="/splash">
+        <file>busy/200.gif</file>
+        <file>busy/201.gif</file>
+        <file>busy/203.gif</file>
+        <file>busy/204.gif</file>
+    </qresource>
 </RCC>

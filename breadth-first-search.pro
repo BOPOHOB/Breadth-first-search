@@ -17,3 +17,6 @@ HEADERS += \
     gui.h \
     application.h
 
+TARGET = barley-brick
+
+CONFIG += c++11
