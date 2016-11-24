@@ -3,6 +3,6 @@ Arrive at a solution of riddle by dint of [breadth first search](https://en.wiki
 
 ![field](https://raw.githubusercontent.com/BOPOHOB/Breadth-first-search/master/img/start.png)
 
-The question of riddle is stack all stars in field to sigle line. One of the possible olutions is follow:
+The question of riddle is stack all stars in field to sigle line. One of the possible solutions is follow:
 
 ![solution movie](https://raw.githubusercontent.com/BOPOHOB/Breadth-first-search/master/img/movie.gif)
